@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style>
+.firstrow
+{
+	border:1px solid black;
+	width:70px;
+	height:70px;
+	margin-top:20px;
+	text-align:center;
+	font-size:40px;
+	background:white;
+}
+.secondrow
+{
+	border:1px solid black;
+	width:70px;
+	height:70px;
+	margin-top:20px;
+	text-align:center;
+	font-size:40px;
+	background:white;
+}
+.thirdrow
+{
+	border:1px solid black;
+	width:70px;
+	height:70px;
+	margin-top:20px;
+	text-align:center;
+	font-size:40px;
+	background:white;
+}
+.div
+{
+	text-align:center;
+	margin-top:100px;
+	width:300px;
+	height:300px;
+	background:purple;
+	border-radius:50px;
+	margin-left:500px;
+}
+.heading
+{
+	color:white;
+	margin-left:525px;
+	margin-top:50px;
+}
+.h1
+{
+	margin-left:550px;
+}
+.h2
+{
+	margin-left:300px;
+}
+</style>
+<script>
+
+function show()
+{
+	//alert("show is working")
+	let i1=document.getElementById('som').value;
+	let i2=document.getElementById('i2').value;
+	let i3=document.getElementById('i3').value;
+	let i4=document.getElementById('i4').value;
+	let i5=document.getElementById('i5').value;
+	let i6=document.getElementById('i6').value;
+	let i7=document.getElementById('i7').value;
+	let i8=document.getElementById('i8').value;
+	let i9=document.getElementById('i9').value;
+
+	if(i1=="x" && i2=="x" && i3=="x")
+	{
+		document.getElementById("print").innerHTML="!! Player X Won !!";
+		document.getElementById("maindiv").src="C:/Users/somes/Desktop/winwin.jfif";
+		document.getElementById("i4").disabled=true;
+		document.getElementById("i5").disabled=true;
+		document.getElementById("i6").disabled=true;
+		document.getElementById("i7").disabled=true;
+		document.getElementById("i8").disabled=true;
+		document.getElementById("i9").disabled=true;
+
+	}
+	else if (i4=="x" && i5=="x" && i6=="x") 
+	{
+		document.getElementById("print").innerHTML="!! Player X Won !!";
+		document.getElementById("maindiv").src="C:/Users/somes/Desktop/winwin.jfif";
+		document.getElementById("i1").disabled=true;
+		document.getElementById("i2").disabled=true;
+		document.getElementById("i3").disabled=true;
+		document.getElementById("i7").disabled=true;
+		document.getElementById("i8").disabled=true;
+		document.getElementById("i9").disabled=true;
+	}
+
+	else if (i7=="x" && i8=="x" && i9=="x") 
+	{
+		document.getElementById("print").innerHTML="!! Player X Won !!";
+		document.getElementById("maindiv").src="C:/Users/somes/Desktop/winwin.jfif";
+		document.getElementById("i1").disabled=true;
+		document.getElementById("i2").disabled=true;
+		document.getElementById("i3").disabled=true;
+		document.getElementById("i4").disabled=true;
+		document.getElementById("i5").disabled=true;
+		document.getElementById("i6").disabled=true;
+	}
+
+	else if (i1=="x" && i5=="x" && i9=="x") 
+	{
+		document.getElementById("print").innerHTML="!! Player X Won !!";
+		document.getElementById("maindiv").src="C:/Users/somes/Desktop/winwin.jfif";
+		document.getElementById("i2").disabled=true;
+		document.getElementById("i3").disabled=true;
+		document.getElementById("i4").disabled=true;
+		document.getElementById("i6").disabled=true;
+		document.getElementById("i7").disabled=true;
+		document.getElementById("i8").disabled=true;
+	}
+
+	else if (i3=="x" && i5=="x" && i7=="x") 
+	{
+		document.getElementById("print").innerHTML="!! Player X Won !!";
+		document.getElementById("maindiv").src="C:/Users/somes/Desktop/winwin.jfif";
+		document.getElementById("i1").disabled=true;
+		document.getElementById("i2").disabled=true;
+		document.getElementById("i4").disabled=true;
+		document.getElementById("i6").disabled=true;
+		document.getElementById("i8").disabled=true;
+		document.getElementById("i9").disabled=true;
+	}
+
+	else if (i1=="x" && i4=="x" && i7=="x") 
+	{
+		document.getElementById("print").innerHTML="!! Player X Won !!";
+		document.getElementById("maindiv").src="C:/Users/somes/Desktop/winwin.jfif";
+		document.getElementById("i2").disabled=true;
+		document.getElementById("i3").disabled=true;
+		document.getElementById("i5").disabled=true;
+		document.getElementById("i6").disabled=true;
+		document.getElementById("i8").disabled=true;
+		document.getElementById("i9").disabled=true;
+	}
+
+	else if (i2=="x" && i5=="x" && i8=="x") 
+	{
+		document.getElementById("print").innerHTML="!! Player X Won !!";
+		document.getElementById("maindiv").src="C:/Users/somes/Desktop/winwin.jfif";
+		document.getElementById("i1").disabled=true;
+		document.getElementById("i3").disabled=true;
+		document.getElementById("i4").disabled=true;
+		document.getElementById("i6").disabled=true;
+		document.getElementById("i7").disabled=true;
+		document.getElementById("i9").disabled=true;
+	}
+
+	else if (i3=="x" && i6=="x" && i9=="x") 
+	{
+		document.getElementById("print").innerHTML="!! Player X Won !!";
+		document.getElementById("maindiv").src="C:/Users/somes/Desktop/winwin.jfif";
+		document.getElementById("i1").disabled=true;
+		document.getElementById("i2").disabled=true;
+		document.getElementById("i4").disabled=true;
+		document.getElementById("i5").disabled=true;
+		document.getElementById("i7").disabled=true;
+		document.getElementById("i8").disabled=true;		
+	}
+
+	//O IF ELSE CODING BLOCK START:---
+	if(i1=="o" && i2=="o" && i3=="o")
+	{
+		document.getElementById("print").innerHTML="!! Player O Won !!";
+		document.getElementById("maindiv").src="C:/Users/somes/Desktop/winwin.jfif";
+
+		document.getElementById("i4").disabled=true;
+		document.getElementById("i5").disabled=true;
+		document.getElementById("i6").disabled=true;
+		document.getElementById("i7").disabled=true;
+		document.getElementById("i8").disabled=true;
+		document.getElementById("i9").disabled=true;
+	}
+	else if (i4=="o" && i5=="o" && i6=="o") 
+	{
+		document.getElementById("print").innerHTML="!! Player O Won !!";
+		document.getElementById("maindiv").src="C:/Users/somes/Desktop/winwin.jfif";
+
+		document.getElementById("i1").disabled=true;
+		document.getElementById("i2").disabled=true;
+		document.getElementById("i3").disabled=true;
+		document.getElementById("i7").disabled=true;
+		document.getElementById("i8").disabled=true;
+		document.getElementById("i9").disabled=true;
+	}
+
+	else if (i7=="o" && i8=="o" && i9=="o") 
+	{
+		document.getElementById("print").innerHTML="!! Player O Won !!";
+		document.getElementById("maindiv").src="C:/Users/somes/Desktop/winwin.jfif";
+	
+		document.getElementById("i1").disabled=true;
+		document.getElementById("i2").disabled=true;
+		document.getElementById("i3").disabled=true;
+		document.getElementById("i4").disabled=true;
+		document.getElementById("i5").disabled=true;
+		document.getElementById("i6").disabled=true;
+	}
+
+	else if (i1=="o" && i5=="o" && i9=="o") 
+	{
+		document.getElementById("print").innerHTML="!! Player O Won !!";
+		document.getElementById("maindiv").src="C:/Users/somes/Desktop/winwin.jfif";
+
+		document.getElementById("i2").disabled=true;
+		document.getElementById("i3").disabled=true;
+		document.getElementById("i4").disabled=true;
+		document.getElementById("i6").disabled=true;
+		document.getElementById("i7").disabled=true;
+		document.getElementById("i8").disabled=true;
+	}
+
+	else if (i3=="o" && i5=="o" && i7=="o") 
+	{
+		document.getElementById("print").innerHTML="!! Player O Won !!";
+		document.getElementById("maindiv").src="C:/Users/somes/Desktop/winwin.jfif";
+		document.getElementById("i1").disabled=true;
+		document.getElementById("i2").disabled=true;
+		document.getElementById("i4").disabled=true;
+		document.getElementById("i6").disabled=true;
+		document.getElementById("i8").disabled=true;
+		document.getElementById("i9").disabled=true;
+	}
+
+	else if (i1=="o" && i4=="o" && i7=="o") 
+	{
+		document.getElementById("print").innerHTML="!! Player O Won !!";
+		document.getElementById("maindiv").src="C:/Users/somes/Desktop/winwin.jfif";
+		document.getElementById("i2").disabled=true;
+		document.getElementById("i3").disabled=true;
+		document.getElementById("i5").disabled=true;
+		document.getElementById("i6").disabled=true;
+		document.getElementById("i8").disabled=true;
+		document.getElementById("i9").disabled=true;
+	}
+
+	else if (i2=="o" && i5=="o" && i8=="o") 
+	{
+		document.getElementById("print").innerHTML="!! Player O Won !!";
+		document.getElementById("maindiv").src="C:/Users/somes/Desktop/winwin.jfif";
+		document.getElementById("i1").disabled=true;
+		document.getElementById("i3").disabled=true;
+		document.getElementById("i4").disabled=true;
+		document.getElementById("i6").disabled=true;
+		document.getElementById("i7").disabled=true;
+		document.getElementById("i9").disabled=true;
+	}
+
+	else if (i3=="o" && i6=="o" && i9=="o") 
+	{
+		document.getElementById("print").innerHTML="!! Player O Won !!";
+		document.getElementById("maindiv").src="C:/Users/somes/Desktop/winwin.jfif";
+		document.getElementById("i1").disabled=true;
+		document.getElementById("i2").disabled=true;
+		document.getElementById("i4").disabled=true;
+		document.getElementById("i5").disabled=true;
+		document.getElementById("i7").disabled=true;
+		document.getElementById("i8").disabled=true;
+	}
+
+	//tie coding block start:--
+	if((i1 == 'x' || i1 == 'o') && (i2 == 'x'
+        || i2 == 'o') && (i3 == 'x' || i3 == 'o') &&
+        (i4 == 'x' || i4 == 'o') && (i5 == 'x' ||
+        i5 == 'o') && (i6 == 'x' || i6 == 'o') &&
+        (i7 == 'x' || i7 == 'o') && (i8 == 'x' ||
+        i8 == 'o') && (i9 == 'x' || i9 == 'o'))
+	{
+		document.getElementById("print").value="match tie";
+	}
+
+}
+
+var touch=1;
+function som()
+{
+		if (touch==1)
+		{
+				document.getElementById('som').value="x";
+				document.getElementById('som').disabled=true;
+				document.getElementById('som').style.backgroundColor="white";
+				//document.getElementById('som').style.fontSize="35px";
+				touch=0;			
+		}
+		else
+		{
+				document.getElementById('som').value="o";
+				document.getElementById('som').disabled=true;
+				touch=1;			
+		}
+	
+}
+function  som2()
+{
+	if(touch==1)
+	{
+				document.getElementById('i2').value="x";
+				document.getElementById('i2').disabled=true;
+				touch=0;		
+	}
+		
+	else
+	{
+				document.getElementById('i2').value="o";
+				document.getElementById('i2').disabled=true;
+				touch=1;			
+	}
+}
+function som3()
+{
+	if(touch==1)
+	{
+				document.getElementById('i3').value="x";
+				document.getElementById('i3').disabled=true;
+				touch=0;		
+	}
+	else
+	{
+				document.getElementById('i3').value="o";
+				document.getElementById('i3').disabled=true;
+				touch=1;		
+	}
+}
+function som4()
+{
+	if(touch==1)
+	{
+				document.getElementById('i4').value="x";
+				document.getElementById('i4').disabled=true;
+				touch=0;		
+	}
+	else
+	{
+				document.getElementById('i4').value="o";
+				document.getElementById('i4').disabled=true;
+				touch=1;		
+	}
+}
+function som5()
+{
+	if(touch==1)
+	{
+				document.getElementById('i5').value="x";
+				document.getElementById('i5').disabled=true;
+				touch=0;		
+	}
+	else
+	{
+				document.getElementById('i5').value="o";
+				document.getElementById('i5').disabled=true;
+				touch=1;		
+	}
+}
+function som6()
+{
+	if(touch==1)
+	{
+				document.getElementById('i6').value="x";
+				document.getElementById('i6').disabled=true;
+				touch=0;		
+	}
+	else
+	{
+				document.getElementById('i6').value="o";
+				document.getElementById('i6').disabled=true;
+				touch=1;		
+	}
+}
+function som7()
+{
+	if(touch==1)
+	{
+				document.getElementById('i7').value="x";
+				document.getElementById('i7').disabled=true;
+				touch=0;		
+	}
+	else
+	{
+				document.getElementById('i7').value="o";
+				document.getElementById('i7').disabled=true;
+				touch=1;		
+	}
+}
+function som8()
+{
+	if(touch==1)
+	{
+				document.getElementById('i8').value="x";
+				document.getElementById('i8').disabled=true;
+				touch=0;		
+	}
+	else
+	{
+				document.getElementById('i8').value="o";
+				document.getElementById('i8').disabled=true;
+				touch=1;		
+	}
+}
+function som9()
+{
+	if(touch==1)
+	{
+				document.getElementById('i9').value="x";
+				document.getElementById('i9').disabled=true;
+				touch=0;		
+	}
+	else
+	{
+				document.getElementById('i9').value="o";
+				document.getElementById('i9').disabled=true;
+				touch=1;		
+	}
+
+}
+function reset()
+{
+	window.location.reload();		
+}
+</script>
+</head>
+<body style="background:orange;">
+<h1 class="h1">TIC-TAC-TOE</h1>
+<h2 class="h2">Try to place at first 3 Xs / 3 Os in a horizontal, vertical or diagonal row.</h2>
+<div class="div">
+<input class="firstrow" id="som" onclick="som();show();" type="text" name="" readonly>
+<input class="firstrow" id="i2"  onclick="som2();show();" type="text" name="" readonly>
+<input class="firstrow" id="i3"  onclick="som3();show();" type="text" name="" readonly><br>
+<input class="secondrow" id="i4" onclick="som4();show();" type="text" name="" readonly>
+<input class="secondrow" id="i5" onclick="som5();show();" type="text" name="" readonly>
+<input class="secondrow" id="i6" onclick="som6();show();" type="text" name="" readonly><br>
+<input class="thirdrow"  id="i7" onclick="som7();show();" type="text" name="" readonly>
+<input class="thirdrow" id="i8"  onclick="som8();show();" type="text" name="" readonly>
+<input class="thirdrow" id="i9"  onclick="som9();show();" type="text" name="" readonly>
+</div>
+<img id="maindiv" style="width:300px;height:300px;margin-left:900px;margin-top:-700px;">
+<h1 id="print" class="heading"></h1>
+<h1 style="margin-left:800px;margin-top:-50px">To reset game click below button !!</h1>
+<button style="margin-left:1000px;width:150px;color:blue;border-radius:5px;height:25px;" onclick="reset()">RESET GAME</button>
+</body>
+</html>
